@@ -10,10 +10,6 @@ body, html {
     height: 100%;
 
 }
-img {
-    width: 20px;
-    height: 20px;
-}
 
 hr{
     display: block;
@@ -102,6 +98,10 @@ header > div#mts > img {
     flex-direction: column;
     height: 100%;
 }
+
+
+
+
 #content{
     flex: 1 0 auto;
 }
@@ -174,36 +174,32 @@ footer > div#contakts > div#post {
     margin-left: -10px;
 }
 
-img#av {
-    width: 500px;
-    height: 376px;
-    transition: all.6s ease;
-    -ms-transition: all.6s ease;
-    -o-transition: all.6s ease;
-    -moz-transition: all.6s ease;
-    -webkit-transition: all.6s ease;
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    gap:25px;
+   
 }
-
 
 .block {
-    display: inline-block;
-    margin-left: 5%;
-    margin-top: 1%;
-    position: relative;
+
+    width: 450px;
+    aspect-ratio: 4/3;
+   background-size: cover;
  
 }
-    .block:hover #av {
-        width: 510px;
-        height: 386px;
-        margin-left: -10px;
-        margin-top: -10px;
-    }
+
+.block:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
     .block:hover .ncar {
         color: red;
-       
+   
     }
 .ncar {
-    position: absolute;
+ 
     bottom: 7%;
     left: 4%;
     color: white;
